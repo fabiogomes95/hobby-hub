@@ -1,7 +1,28 @@
 # Hobby Hub: roteiro de estudos
 
 Site pessoal pra estudar desenvolvimento web, montado **pedaço por pedaço**.
-Tema: meus livros, séries e jogos.
+Tema: meus livros, séries, filmes e jogos.
+
+---
+
+## 📍 ONDE PARAMOS (leia isto primeiro)
+
+**Última sessão:** 26/11/2026. **A fase HTML base está concluída.**
+**Próximo passo:** começar o **CSS**.
+
+### Como começar o CSS
+1. Criar o arquivo `style.css` na mesma pasta do `index.html`.
+2. Ligar o CSS ao HTML com uma tag `<link>` dentro do `<head>`. Ela é a tag nova do primeiro passo; pesquise o formato dela ou peça a dica pro Claude.
+3. Testar se a ligação funcionou com uma regra bem simples (ex: mudar a cor do fundo) e abrir o `index.html` no navegador.
+4. Só depois disso começar a personalização de verdade.
+
+### Antes de estilizar, decidir a cara do site (é DO MEU JEITO)
+- [ ] **Clima:** que sensação o site passa? (estante de livros aconchegante, retrô de videogame, cinema escuro, caderno minimalista...)
+- [ ] **Referências:** sites, apps, capas de disco ou jogos cujo visual eu curto
+- [ ] **Cores:** uma cor que eu amo, uma que não quero de jeito nenhum, fundo claro ou escuro
+- [ ] **Letra:** com serifa (mais "livro") ou sem serifa (mais "moderna")
+
+> Evitar a "cara de IA": nada de gradiente roxo/azul genérico, cards todos iguais com sombra suave, emojis decorando tudo. Toda escolha visual tem que ter um motivo meu.
 
 ---
 
@@ -114,4 +135,6 @@ git push
 
 ### Se for usar o Claude de novo
 Abra a pasta do projeto e diga algo como:
-> "Leia o ROTEIRO.md e vamos continuar do próximo passo, seguindo as regras de lá."
+> "Leia o ROTEIRO.md inteiro, principalmente 'Onde paramos', 'Regras do projeto' e 'Como estamos trabalhando'. Vamos continuar do próximo passo (começar o CSS) seguindo essas regras: eu escrevo o código, você revisa com dicas sem me dar a resposta pronta, e depois escreve os comentários didáticos e arruma o recuo. Commits sem coautoria do Claude."
+
+**No fim de cada sessão:** pedir pro Claude atualizar a parte "📍 ONDE PARAMOS" e o "O que já foi feito".
