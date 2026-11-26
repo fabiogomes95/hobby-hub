@@ -33,6 +33,7 @@ Tema: meus livros, séries e jogos.
 ### Como estamos trabalhando
 - **Eu escrevo a lógica** (as tags). O Claude **revisa e dá dicas**, sem entregar a resposta pronta.
 - **O Claude escreve os comentários didáticos** depois que a estrutura estiver certa.
+- **O Claude cuida do recuo (indentação)** do arquivo. Eu foco na lógica.
 
 ### Lições que aprendi
 - **Toda tag que abre, fecha** (exceções: `<meta>`, `<img>`, `<br>`...). O navegador "conserta" sozinho, mas isso vira bug no CSS.
@@ -63,7 +64,6 @@ Tema: meus livros, séries e jogos.
 
 ## Próximos passos (fase HTML)
 
-- [ ] **Ajuste pendente:** corrigir a indentação (recuo) da seção de Jogos e do rodapé
 - [ ] **Jogos:** adicionar um 2º jogo, e talvez um "top 3" com `<ol>` (lista numerada)
 - [ ] **Imagens**: capas com `<img>` (atributos `src` e `alt`) e talvez `<figure>` / `<figcaption>`
 - [ ] Trocar todo conteúdo `TROQUE` pelo meu conteúdo real
