@@ -65,15 +65,21 @@ Tema: meus livros, séries e jogos.
 ## Próximos passos (fase HTML)
 
 - [ ] **Jogos:** adicionar um 2º jogo, e talvez um "top 3" com `<ol>` (lista numerada)
-- [ ] **Imagens**: capas com `<img>` (atributos `src` e `alt`) e talvez `<figure>` / `<figcaption>`
 - [ ] Trocar todo conteúdo `TROQUE` pelo meu conteúdo real
 - [ ] (Opcional) Uma seção "Sobre mim" ou um formulário simples (`<form>`, `<input>`, `<label>`)
 - [ ] Revisar: decidir se Livros também usa `<dl>` como as Séries, pra padronizar
 
+> **Imagens/capas: NÃO fazer à mão.** Elas vão vir automaticamente da API (ver fase 4).
+
 ## Fases depois do HTML
 1. **CSS**: aqui entra a personalização do meu jeito (cores, fontes, layout)
 2. **Responsividade**: o site ficar bom no celular
-3. **JavaScript** (talvez): filtros, contador etc.
+3. **JavaScript básico**: filtros, contador etc.
+4. **Dados automáticos via API**: cada filme/série/livro/jogo terá um **id**, e o JavaScript vai usar esse id pra puxar de sites externos a capa, a sinopse, o ano, o gênero etc.
+   - Filmes/séries: TMDB ou OMDb (o IMDb em si não tem API gratuita aberta)
+   - Livros: Open Library ou Google Books
+   - Jogos: RAWG ou IGDB
+   - **Por que o HTML de agora importa:** os `<article>` com `<dl>` que estou montando viram o "molde" que o JavaScript vai preencher. Então vale pensar desde já em quais campos eu quero (gênero, ano, plataforma...) e o que vai ser meu (status, opinião) e o que vem da API.
 
 ---
 
