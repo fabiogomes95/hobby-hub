@@ -1,0 +1,145 @@
+<!--
+  <!DOCTYPE html> avisa ao navegador: "este arquivo é HTML5 (a versão atual)".
+  Não é uma tag de verdade, é uma declaração. Sempre vem na primeiríssima linha.
+-->
+<!DOCTYPE html>
+
+<!--
+  <html> = a "caixa" que envolve TODO o site. Tudo fica dentro dela.
+  lang="pt-BR" diz o idioma da página. Isso ajuda leitores de tela
+  (pra pessoas com deficiência visual) a pronunciar certo, e ajuda o Google.
+-->
+<html lang="pt-BR">
+
+<!--
+  <head> = a "cabeça" da página. Aqui vão informações SOBRE a página
+  (metadados), e nada disso aparece no corpo do site.
+-->
+<head>
+  <!--
+    charset="UTF-8" = a tabela de caracteres usada.
+    Sem isso, acentos (é, ç, ã) podem aparecer como símbolos estranhos.
+  -->
+  <meta charset="UTF-8">
+
+  <!--
+    viewport = faz o site se ajustar à largura da tela do celular.
+    Sem isso, o celular mostra o site "miniaturizado", como se fosse um PC.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <title> = o texto que aparece na ABA do navegador (não na página) -->
+  <!-- TROQUE "Hobby Hub" pelo nome que você escolher pro site -->
+  <title>Hobby Hub</title>
+</head>
+
+<!--
+  <body> = o "corpo" da página. TUDO que aparece na tela fica aqui dentro.
+-->
+<body>
+
+  <!--
+    <header> = cabeçalho do site. Fica no topo e geralmente contém
+    o título/nome do site (e às vezes um logo ou subtítulo).
+    Não confundir com <head> (que é metadado, lá em cima, invisível).
+  -->
+  <header>
+    <!-- <h1> = título principal da página. Só deve existir UM <h1> por página. -->
+    <!-- TROQUE "Hobby Hub" pelo nome que você escolher -->
+    <h1>Hobby Hub</h1>
+
+    <!-- <p> = parágrafo simples, aqui usado como subtítulo/descrição curta -->
+    <p>Meu cantinho pessoal de livros, séries e jogos</p>
+  </header>
+
+  <!--
+    <nav> = bloco de navegação. Normalmente contém uma lista de links
+    para as outras seções/páginas do site.
+  -->
+  <nav>
+    <!--
+      <ul> = lista não ordenada (sem números).
+      É o padrão pra menus de navegação: cada link vira um <li>.
+    -->
+    <ul>
+      <!-- <li> = item de lista. <a href="#id"> = link que pula pra uma seção da própria página -->
+      <li><a href="#livros">Livros</a></li>
+      <li><a href="#series">Séries</a></li>
+      <li><a href="#jogos">Jogos</a></li>
+    </ul>
+  </nav>
+
+  <!--
+    <main> = o conteúdo PRINCIPAL da página, aquilo que é único dela.
+    Header, nav e footer ficam fora porque se repetem em qualquer página.
+    Também só deve existir UM <main> por página.
+  -->
+  <main>
+
+    <!-- ===================== SEÇÃO: LIVROS ===================== -->
+
+    <!--
+      <section> = um bloco temático da página (um "capítulo").
+      id="livros" é o NOME dessa seção. Lembra do link <a href="#livros"> lá no menu?
+      O # aponta pra este id. Clicou no link, a página rola até aqui.
+      ATENÇÃO: o id tem que ser idêntico ao do href (sem o #), e não pode repetir na página.
+    -->
+    <section id="livros">
+
+      <!--
+        <h2> = subtítulo, um nível abaixo do <h1>.
+        Pensa num livro: h1 = título do livro, h2 = capítulos, h3 = subcapítulos.
+        Não pule níveis (ex: ir do h1 direto pro h3), só por causa do tamanho da letra.
+        O tamanho a gente muda depois, com CSS.
+      -->
+      <h2>Livros</h2>
+
+      <p>O que estou lendo, o que já li e o que quero ler.</p>
+
+      <!--
+        <article> = um conteúdo que faz sentido SOZINHO, mesmo fora da página.
+        Cada livro é independente dos outros, então cada um vira um <article>.
+        Dica: se desse pra "recortar" o bloco e colar em outro site sem perder o sentido,
+        provavelmente é um <article>.
+      -->
+      <article>
+        <!-- <h3> = título do livro (está "dentro" do capítulo Livros, então é h3) -->
+        <!-- TROQUE pelos seus livros de verdade -->
+        <h3>Nome do Livro 1</h3>
+
+        <!--
+          <strong> = texto IMPORTANTE (o navegador mostra em negrito).
+          Usamos aqui pra destacar o "rótulo" (Autor:, Status:).
+        -->
+        <p><strong>Autor:</strong> Nome do Autor</p>
+        <p><strong>Status:</strong> Lendo</p>
+
+        <!--
+          <em> = ênfase (o navegador mostra em itálico).
+          Bom pra uma frase com tom pessoal, como sua opinião.
+        -->
+        <p><em>Minha opinião curta sobre o livro.</em></p>
+      </article>
+
+      <!-- Segundo livro: mesma estrutura do primeiro. Copiar e colar o bloco <article> é o jeito certo de repetir. -->
+      <article>
+        <h3>Nome do Livro 2</h3>
+        <p><strong>Autor:</strong> Nome do Autor</p>
+        <p><strong>Status:</strong> Lido</p>
+        <p><em>Minha opinião curta sobre o livro.</em></p>
+      </article>
+
+    </section>
+    <!-- ================= FIM DA SEÇÃO: LIVROS ================== -->
+
+    <!-- PRÓXIMO PASSO: seção de Séries (id="series") -->
+    <!-- DEPOIS: seção de Jogos (id="jogos") -->
+
+  </main>
+
+  <footer>
+    <!-- rodapé vai aqui -->
+  </footer>
+
+</body>
+</html>
