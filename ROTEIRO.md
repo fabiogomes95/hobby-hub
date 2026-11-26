@@ -29,8 +29,10 @@ Tema: meus livros, séries e jogos.
 - [x] Seção **Jogos** (feita por mim, revisada): aprendi que toda tag que abre, fecha, e que o título da seção fica FORA do `<article>`
 - [x] **Rodapé** (feito por mim, revisado): `<small>`, `&copy;`, link "voltar ao topo" (`id="topo"` no `<h1>`), link externo com `target="_blank"`
 - [x] **Seção Filmes** (feita por mim, de primeira!): link no menu + `id`, mesmo molde das outras seções
+- [x] `<meta name="description">` no `<head>` + subtítulo atualizado com filmes
 - [x] **Livros padronizados com `<dl>`** (feito por mim, revisado): título no `<h3>` dentro do `<article>`, um par `<dt>`+`<dd>` por informação; campos novos Resumo e Páginas
 - [x] Git iniciado e projeto no GitHub (o push eu faço manualmente)
+- [x] **✅ FASE HTML BASE CONCLUÍDA**
 
 ### Como estamos trabalhando
 - **Eu escrevo a lógica** (as tags). O Claude **revisa e dá dicas**, sem entregar a resposta pronta.
@@ -62,14 +64,17 @@ Tema: meus livros, séries e jogos.
 | `<small>` | "Letras miúdas": créditos, direitos autorais |
 | `&copy;` | Entidade HTML que vira © (também `&amp;`, `&lt;`, `&gt;`) |
 | `<a href="https://..." target="_blank">` | Link externo que abre em aba nova |
+| `<meta name="description">` | Resumo do site pro Google e pra prévias de link (não aparece na página) |
 
 ---
 
-## Próximos passos (fase HTML)
+## Pendências de HTML (dá pra fazer a qualquer momento)
 
 - [ ] **Jogos:** adicionar um 2º jogo, e talvez um "top 3" com `<ol>` (lista numerada)
 - [ ] Trocar todo conteúdo `TROQUE` pelo meu conteúdo real
-- [ ] (Opcional) Uma seção "Sobre mim" ou um formulário simples (`<form>`, `<input>`, `<label>`)
+- [ ] (Opcional) Uma seção "Sobre mim"
+- [ ] Formulário de "Adicionar" (`<form>`, `<input>`, `<button>`): fazer junto com a fase do JavaScript
+- [ ] Hábito: validar o HTML em validator.w3.org antes de cada fase nova
 
 > **Imagens/capas: NÃO fazer à mão.** Elas vão vir automaticamente da API (ver fase 4).
 
