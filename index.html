@@ -66,6 +66,7 @@
       <!-- <li> = item de lista. <a href="#id"> = link que pula pra uma seção da própria página -->
       <li><a href="#livros">Livros</a></li>
       <li><a href="#series">Séries</a></li>
+      <li><a href="#filmes">Filmes</a></li>
       <li><a href="#jogos">Jogos</a></li>
     </ul>
   </nav>
@@ -243,6 +244,54 @@
 
     </section>
     <!-- ================= FIM DA SEÇÃO: SÉRIES ================== -->
+
+    <!-- ===================== SEÇÃO: FILMES ===================== -->
+
+    <!--
+      Seção criada depois das outras. Pra ela aparecer no menu, foi preciso
+      mexer em DOIS lugares: o <li><a href="#filmes"> lá no <nav> e o id="filmes" aqui.
+      A ordem dos links no menu acompanha a ordem das seções na página.
+    -->
+    <section id="filmes">
+      <!-- <h2> = título da seção. Ele e a frase de apresentação ficam FORA dos <article> -->
+      <h2>Filmes</h2>
+      <p>Os filmes que assisti ou quero assistir.</p>
+
+      <!-- Cada filme = um <article>, com o mesmo molde de Livros, Séries e Jogos -->
+      <article>
+        <!-- TROQUE pelos seus filmes de verdade -->
+        <h3>Nome do Filme 1</h3>
+
+        <!-- Ficha técnica: um par <dt> (rótulo) + <dd> (valor) por informação -->
+        <dl>
+          <dt>Gênero</dt>
+          <dd>Ação</dd>
+
+          <dt>Ano</dt>
+          <dd>2021</dd>
+
+          <dt>Status</dt>
+          <dd>Assistido</dd>
+        </dl>
+        <p><em>Minha opinião curta sobre o filme.</em></p>
+      </article>
+
+      <article>
+        <h3>Nome do Filme 2</h3>
+        <dl>
+          <dt>Gênero</dt>
+          <dd>Comédia</dd>
+
+          <dt>Ano</dt>
+          <dd>2020</dd>
+
+          <dt>Status</dt>
+          <dd>Quero assistir</dd>
+        </dl>
+        <p><em>Minha opinião curta sobre o filme.</em></p>
+      </article>
+    </section>
+    <!-- ================= FIM DA SEÇÃO: FILMES ================== -->
 
     <!-- ===================== SEÇÃO: JOGOS ===================== -->
 

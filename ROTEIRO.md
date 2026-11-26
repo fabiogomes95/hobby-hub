@@ -28,6 +28,7 @@ Tema: meus livros, séries e jogos.
 - [x] Seção **Séries**: lista de descrição `<dl>`, `<dt>`, `<dd>` (ficha técnica)
 - [x] Seção **Jogos** (feita por mim, revisada): aprendi que toda tag que abre, fecha, e que o título da seção fica FORA do `<article>`
 - [x] **Rodapé** (feito por mim, revisado): `<small>`, `&copy;`, link "voltar ao topo" (`id="topo"` no `<h1>`), link externo com `target="_blank"`
+- [x] **Seção Filmes** (feita por mim, de primeira!): link no menu + `id`, mesmo molde das outras seções
 - [x] **Livros padronizados com `<dl>`** (feito por mim, revisado): título no `<h3>` dentro do `<article>`, um par `<dt>`+`<dd>` por informação; campos novos Resumo e Páginas
 - [x] Git iniciado e projeto no GitHub (o push eu faço manualmente)
 
