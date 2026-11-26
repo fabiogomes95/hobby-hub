@@ -132,8 +132,72 @@
     </section>
     <!-- ================= FIM DA SEÇÃO: LIVROS ================== -->
 
-    <!-- PRÓXIMO PASSO: seção de Séries (id="series") -->
-    <!-- DEPOIS: seção de Jogos (id="jogos") -->
+    <!-- ===================== SEÇÃO: SÉRIES ===================== -->
+
+    <!--
+      Mesma ideia da seção de Livros: um <section> com id igual ao link do menu.
+      Repare: id="series" SEM acento. Acento e espaço em id dão dor de cabeça,
+      então o padrão é usar só letras minúsculas, números e hífen (ex: "minhas-series").
+    -->
+    <section id="series">
+
+      <h2>Séries</h2>
+
+      <p>As séries que acompanho, maratonei ou larguei no meio.</p>
+
+      <article>
+        <!-- TROQUE pelas suas séries de verdade -->
+        <h3>Nome da Série 1</h3>
+
+        <!--
+          NOVIDADE: <dl> = "description list" (lista de descrição).
+          Serve pra pares de "rótulo → valor", tipo uma ficha técnica.
+            <dt> = o termo/rótulo   (description term)
+            <dd> = o valor dele     (description details)
+          Nos Livros usamos <p><strong>Autor:</strong> ...</p>, que funciona.
+          Mas o <dl> é o jeito "semântico" (com significado): o navegador e o
+          leitor de tela ENTENDEM que "Temporadas" e "3" estão ligados.
+          Depois você decide se quer padronizar os Livros desse jeito também.
+        -->
+        <dl>
+          <dt>Gênero</dt>
+          <dd>Drama</dd>
+
+          <dt>Temporadas</dt>
+          <dd>3</dd>
+
+          <dt>Onde assisto</dt>
+          <dd>Nome do streaming</dd>
+
+          <dt>Status</dt>
+          <dd>Assistindo</dd>
+        </dl>
+
+        <p><em>Minha opinião curta sobre a série.</em></p>
+      </article>
+
+      <article>
+        <h3>Nome da Série 2</h3>
+        <dl>
+          <dt>Gênero</dt>
+          <dd>Comédia</dd>
+
+          <dt>Temporadas</dt>
+          <dd>5</dd>
+
+          <dt>Onde assisto</dt>
+          <dd>Nome do streaming</dd>
+
+          <dt>Status</dt>
+          <dd>Terminei</dd>
+        </dl>
+        <p><em>Minha opinião curta sobre a série.</em></p>
+      </article>
+
+    </section>
+    <!-- ================= FIM DA SEÇÃO: SÉRIES ================== -->
+
+    <!-- PRÓXIMO PASSO: seção de Jogos (id="jogos") -->
 
   </main>
 
