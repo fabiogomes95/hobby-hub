@@ -104,16 +104,51 @@
         provavelmente é um <article>.
       -->
       <article>
-        <!-- <h3> = título do livro (está "dentro" do capítulo Livros, então é h3) -->
-        <!-- TROQUE pelos seus livros de verdade -->
+        <!--
+          <h3> = título do livro. É a PRIMEIRA coisa dentro do <article>:
+          se você "recortar" a caixa do livro, o título tem que vir junto.
+          TROQUE pelos seus livros de verdade.
+        -->
         <h3>Nome do Livro 1</h3>
 
         <!--
-          <strong> = texto IMPORTANTE (o navegador mostra em negrito).
-          Usamos aqui pra destacar o "rótulo" (Autor:, Status:).
+          <dl> = "description list" (lista de descrição).
+          Serve pra pares de "rótulo → valor", tipo uma ficha técnica.
+            <dt> = o rótulo, o NOME do campo   (description term)
+            <dd> = o valor daquele campo       (description details)
+
+          REGRA: cada informação diferente ganha o SEU PRÓPRIO <dt>.
+          Autor, Gênero e Ano são 3 informações, então são 3 pares <dt> + <dd>.
+          (Um <dt> com vários <dd> só serve quando os valores são do MESMO campo,
+          ex: Gênero → Fantasia, Aventura.)
+
+          Antes usávamos <p><strong>Autor:</strong> Nome</p>. Funciona, mas o <dl> é
+          o jeito "semântico" (com significado): o navegador e o leitor de tela
+          ENTENDEM que o rótulo e o valor estão ligados. Repare que os dois pontos (:)
+          somem, porque a própria estrutura já diz quem é rótulo e quem é valor.
+
+          Pensando no futuro (API): Gênero, Autor, Ano, Resumo e Páginas a API
+          consegue trazer sozinha. Status e opinião são só seus.
         -->
-        <p><strong>Autor:</strong> Nome do Autor</p>
-        <p><strong>Status:</strong> Lendo</p>
+        <dl>
+          <dt>Gênero</dt>
+          <dd>Ficção Científica</dd>
+
+          <dt>Autor</dt>
+          <dd>Nome</dd>
+
+          <dt>Ano</dt>
+          <dd>2020</dd>
+
+          <dt>Resumo</dt>
+          <dd>Resumo do livro.</dd>
+
+          <dt>Páginas</dt>
+          <dd>300</dd>
+
+          <dt>Status</dt>
+          <dd>Lido</dd>
+        </dl>
 
         <!--
           <em> = ênfase (o navegador mostra em itálico).
@@ -125,8 +160,25 @@
       <!-- Segundo livro: mesma estrutura do primeiro. Copiar e colar o bloco <article> é o jeito certo de repetir. -->
       <article>
         <h3>Nome do Livro 2</h3>
-        <p><strong>Autor:</strong> Nome do Autor</p>
-        <p><strong>Status:</strong> Lido</p>
+        <dl>
+          <dt>Gênero</dt>
+          <dd>Fantasia</dd>
+
+          <dt>Autor</dt>
+          <dd>Nome</dd>
+
+          <dt>Ano</dt>
+          <dd>2020</dd>
+
+          <dt>Resumo</dt>
+          <dd>Resumo do livro.</dd>
+
+          <dt>Páginas</dt>
+          <dd>300</dd>
+
+          <dt>Status</dt>
+          <dd>Lido</dd>
+        </dl>
         <p><em>Minha opinião curta sobre o livro.</em></p>
       </article>
 
@@ -151,14 +203,8 @@
         <h3>Nome da Série 1</h3>
 
         <!--
-          NOVIDADE: <dl> = "description list" (lista de descrição).
-          Serve pra pares de "rótulo → valor", tipo uma ficha técnica.
-            <dt> = o termo/rótulo   (description term)
-            <dd> = o valor dele     (description details)
-          Nos Livros usamos <p><strong>Autor:</strong> ...</p>, que funciona.
-          Mas o <dl> é o jeito "semântico" (com significado): o navegador e o
-          leitor de tela ENTENDEM que "Temporadas" e "3" estão ligados.
-          Depois você decide se quer padronizar os Livros desse jeito também.
+          Ficha técnica com <dl>, mesmo padrão dos Livros (explicação completa lá):
+          <dt> = rótulo, <dd> = valor. Uma informação = um par.
         -->
         <dl>
           <dt>Gênero</dt>

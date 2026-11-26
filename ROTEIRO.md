@@ -28,6 +28,7 @@ Tema: meus livros, séries e jogos.
 - [x] Seção **Séries**: lista de descrição `<dl>`, `<dt>`, `<dd>` (ficha técnica)
 - [x] Seção **Jogos** (feita por mim, revisada): aprendi que toda tag que abre, fecha, e que o título da seção fica FORA do `<article>`
 - [x] **Rodapé** (feito por mim, revisado): `<small>`, `&copy;`, link "voltar ao topo" (`id="topo"` no `<h1>`), link externo com `target="_blank"`
+- [x] **Livros padronizados com `<dl>`** (feito por mim, revisado): título no `<h3>` dentro do `<article>`, um par `<dt>`+`<dd>` por informação; campos novos Resumo e Páginas
 - [x] Git iniciado e projeto no GitHub (o push eu faço manualmente)
 
 ### Como estamos trabalhando
@@ -39,6 +40,7 @@ Tema: meus livros, séries e jogos.
 - **Toda tag que abre, fecha** (exceções: `<meta>`, `<img>`, `<br>`...). O navegador "conserta" sozinho, mas isso vira bug no CSS.
 - **O que é da seção fica no `<section>`; o que é do item fica no `<article>`.** Pergunta-chave: "isso fala deste jogo ou da seção inteira?"
 - **Bloco × em linha:** `<p>`, `<h1>`, `<section>` ocupam a linha inteira. `<a>`, `<small>`, `<strong>`, `<em>` ficam lado a lado.
+- **`<dl>`: uma informação = um par `<dt>` + `<dd>`.** O `<dt>` é o NOME do campo (Autor, Ano), nunca o conteúdo. O título do item fica no `<h3>`, fora da `<dl>` e dentro do `<article>`.
 - **Indentação:** cada nível "dentro" ganha 2 espaços. Não muda nada no navegador, mas mostra quem está dentro de quem.
 
 ### Tags que já aprendi
@@ -67,7 +69,6 @@ Tema: meus livros, séries e jogos.
 - [ ] **Jogos:** adicionar um 2º jogo, e talvez um "top 3" com `<ol>` (lista numerada)
 - [ ] Trocar todo conteúdo `TROQUE` pelo meu conteúdo real
 - [ ] (Opcional) Uma seção "Sobre mim" ou um formulário simples (`<form>`, `<input>`, `<label>`)
-- [ ] Revisar: decidir se Livros também usa `<dl>` como as Séries, pra padronizar
 
 > **Imagens/capas: NÃO fazer à mão.** Elas vão vir automaticamente da API (ver fase 4).
 
