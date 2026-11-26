@@ -46,7 +46,8 @@
   <header>
     <!-- <h1> = título principal da página. Só deve existir UM <h1> por página. -->
     <!-- TROQUE "Hobby Hub" pelo nome que você escolher -->
-    <h1>Hobby Hub</h1>
+    <!-- id="topo" = destino do link "Voltar ao topo" lá do rodapé -->
+    <h1 id="topo">Hobby Hub</h1>
 
     <!-- <p> = parágrafo simples, aqui usado como subtítulo/descrição curta -->
     <p>Meu cantinho pessoal de livros, séries e jogos</p>
@@ -237,8 +238,36 @@
 
   </main>
 
+  <!--
+    <footer> = rodapé do site. É a "assinatura" no fim da página:
+    créditos, links úteis, contato. Vale pro site todo, por isso fica fora do <main>.
+  -->
   <footer>
-    <!-- rodapé vai aqui -->
+    <!--
+      Cada parte do rodapé fica num <p> próprio. Por quê?
+      <small> e <a> são elementos EM LINHA: ficam lado a lado, como palavras numa frase.
+      <p> é um elemento de BLOCO: ocupa a linha inteira e empurra o próximo pra baixo.
+      Envolvendo cada um num <p>, cada parte ganha a sua linha.
+    -->
+
+    <!--
+      <small> = "letras miúdas": créditos, avisos legais, direitos autorais.
+      O nome diz o TIPO de texto, não o tamanho (tamanho é com CSS).
+      &copy; = entidade HTML, um código que o navegador troca pelo símbolo ©.
+      Outras úteis: &amp; (vira &), &lt; (vira <), &gt; (vira >).
+    -->
+     <p><small>&copy; 2026, Fabio Gomes da Silva. Todos os direitos reservados.</small></p>
+    <!--
+      Link interno, igual aos do menu: o #topo aponta pro elemento com id="topo",
+      que é o <h1> lá do <header>. Clicou, a página sobe até o início.
+    -->
+     <p><a href="#topo">Voltar ao topo</a></p>
+
+    <!--
+      Link EXTERNO: o href leva um endereço completo (https://...) em vez de #id.
+      target="_blank" = abre numa aba nova, então quem visita não sai do seu site.
+    -->
+     <p><a href="https://github.com/fabiogomes95/hobby-hub" target="_blank">Código-fonte no GitHub</a></p>
   </footer>
 
 </body>

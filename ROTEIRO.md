@@ -26,7 +26,19 @@ Tema: meus livros, séries e jogos.
 - [x] `<main>` e `<footer>` (footer ainda vazio)
 - [x] Seção **Livros**: `<section id>`, `<h2>`, `<h3>`, `<article>`, `<strong>`, `<em>`
 - [x] Seção **Séries**: lista de descrição `<dl>`, `<dt>`, `<dd>` (ficha técnica)
-- [x] Git iniciado e projeto no GitHub
+- [x] Seção **Jogos** (feita por mim, revisada): aprendi que toda tag que abre, fecha, e que o título da seção fica FORA do `<article>`
+- [x] **Rodapé** (feito por mim, revisado): `<small>`, `&copy;`, link "voltar ao topo" (`id="topo"` no `<h1>`), link externo com `target="_blank"`
+- [x] Git iniciado e projeto no GitHub (o push eu faço manualmente)
+
+### Como estamos trabalhando
+- **Eu escrevo a lógica** (as tags). O Claude **revisa e dá dicas**, sem entregar a resposta pronta.
+- **O Claude escreve os comentários didáticos** depois que a estrutura estiver certa.
+
+### Lições que aprendi
+- **Toda tag que abre, fecha** (exceções: `<meta>`, `<img>`, `<br>`...). O navegador "conserta" sozinho, mas isso vira bug no CSS.
+- **O que é da seção fica no `<section>`; o que é do item fica no `<article>`.** Pergunta-chave: "isso fala deste jogo ou da seção inteira?"
+- **Bloco × em linha:** `<p>`, `<h1>`, `<section>` ocupam a linha inteira. `<a>`, `<small>`, `<strong>`, `<em>` ficam lado a lado.
+- **Indentação:** cada nível "dentro" ganha 2 espaços. Não muda nada no navegador, mas mostra quem está dentro de quem.
 
 ### Tags que já aprendi
 | Tag | Pra que serve |
@@ -43,15 +55,17 @@ Tema: meus livros, séries e jogos.
 | `<a href="#id">` | Link que pula pra uma seção da página |
 | `<strong>` / `<em>` | Importância (negrito) / ênfase (itálico) |
 | `<dl>` / `<dt>` / `<dd>` | Lista de descrição: rótulo → valor |
+| `<small>` | "Letras miúdas": créditos, direitos autorais |
+| `&copy;` | Entidade HTML que vira © (também `&amp;`, `&lt;`, `&gt;`) |
+| `<a href="https://..." target="_blank">` | Link externo que abre em aba nova |
 
 ---
 
 ## Próximos passos (fase HTML)
 
-- [ ] **Seção Jogos** (`id="jogos"`). Ideia de tag nova: `<ol>` (lista numerada) pra um "top 3", ou `<time>` pra datas
-- [ ] **Rodapé**: preencher o `<footer>` (nome, ano, link pra voltar ao topo)
+- [ ] **Ajuste pendente:** corrigir a indentação (recuo) da seção de Jogos e do rodapé
+- [ ] **Jogos:** adicionar um 2º jogo, e talvez um "top 3" com `<ol>` (lista numerada)
 - [ ] **Imagens**: capas com `<img>` (atributos `src` e `alt`) e talvez `<figure>` / `<figcaption>`
-- [ ] **Links externos**: `<a href="https://..." target="_blank">` (ex: meu perfil em algum site)
 - [ ] Trocar todo conteúdo `TROQUE` pelo meu conteúdo real
 - [ ] (Opcional) Uma seção "Sobre mim" ou um formulário simples (`<form>`, `<input>`, `<label>`)
 - [ ] Revisar: decidir se Livros também usa `<dl>` como as Séries, pra padronizar
